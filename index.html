@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ajax Basket</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="navbar">
+          <img src="img/NBA.jpg" class="logo">
+          <h2>STATISTICHE GIOCATORI NBA</h2>
+        </div>
+      <div class="container-data">
+        <div class="data-left" id="idCodGiocatori">
+          <h3>Codice Giocatore</h3>
+        </div>
+        <div class="data-right" id="stat-giocatore">
+        </div>
+      </div>
+    </div>
+    <script id="codici-giocatori" type="text/x-handlebars-template">
+      <div class="entry">
+        <p class="codice-giocatore-singolo">{{codGiocatore}}</p>
+      </div>
+    </script>
+    <script id="statistiche-giocatori" type="text/x-handlebars-template">
+      <p class="statistiche">
+        <ul>
+          <li>Codice Giocatore: {{codGioc}}</li>
+          <li>Punti Fatti: {{pntFatt}}</li>
+          <li>Rimbalzi: {{rimb}}</li>
+          <li>Falli: {{falli}}</li>
+          <li>Tiri da 2 punti: {{pntdue}}</li>
+          <li>Tiri da 3 punti: {{pnttre}}</li>
+        </ul>
+      </p>
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>

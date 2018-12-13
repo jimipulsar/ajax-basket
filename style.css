@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin:auto;
+  padding: auto;
+  font-family:Cabin;
+}
+
+.wrapper {
+  width:100%;
+  height: 106vh;
+  float:left;
+  background: url(img/Basket.jpg);
+  margin: auto;
+  z-index: -1;
+  background-size:cover;
+  position: relative;
+}
+
+.navbar {
+  float:left;
+  height: 108px;
+  width: 100%;
+  background: #FFF;
+}
+
+.navbar {
+  width: 100%;
+  float:left;
+  background-image: linear-gradient(141deg, #ff0c0c 0%, #821919 51%, #000000 75%);
+  height: 108px;
+}
+
+.navbar h2 {
+  padding: 30px;
+  color: #fff;
+  font-family: Cabin;
+  font-size: 30px;
+  animation-duration: 1s;
+  animation-name: slidein;
+  text-align: center;
+}
+.logo {
+  float: left;
+  height: 108px;
+}
+
+
+.container-data {
+  width:80%;
+  float:left;
+  background:green;
+  position:relative;
+}
+
+.data-left {
+  width: 37%;
+  float:left;
+  background: #ffffff0a;
+  position:relative;
+  padding: 51px;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.data-left h3 {
+  text-align:center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.data-right {
+  position: relative;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.data-right ul {
+  list-style:none;
+  font-size:18px;
+}
+
+
+.left-nav {
+  width:70%;
+}
+
+.container-data {
+  float:left;
+  background: #ffffffab;
+  position:relative;
+  border-radius: 19px;
+  box-shadow: 0px 0px 12px #000;
+  margin-top: 29px;
+  margin-left: 163px;
+}
+
+.entry {
+  padding:5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.entry p:hover {
+  text-decoration: underline;
+}
+
+
+@-webkit-keyframes slidein {
+      from {
+          margin-left: 100%;
+          width: 300%;
+      }
+
+      to {
+          margin-left: 0%;
+          width: 100%;
+      }
+  }
+
+  @-moz-keyframes slidein {
+      from {
+          margin-left: 100%;
+          width: 300%;
+      }
+
+      to {
+          margin-left: 0%;
+          width: 100%;
+      }
+  }
+   @-o-keyframes slidein {
+      from {
+          margin-left: 100%;
+          width: 300%;
+      }
+
+      to {
+          margin-left: 0%;
+          width: 100%;
+      }
+  }
+    @keyframes slidein {
+      from {
+          margin-left: 100%;
+          width: 300%;
+      }
+
+      to {
+          margin-left: 0%;
+          width: 100%;
+      }
+  }
